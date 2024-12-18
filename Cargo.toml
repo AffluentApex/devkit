@@ -10,9 +10,11 @@ edition = "2021"
 authors = ["GlidedApex"]
 description = "A comprehensive developer toolkit for project analysis and management"
 license = "MIT"
-repository = "https://github.com/GlidedApex/devkit"
+repository = "https://github.com/AffluentApex/devkit"
+documentation = "https://github.com/AffluentApex/devkit#readme"
+homepage = "https://github.com/AffluentApex/devkit"
 readme = "README.md"
-keywords = ["developer-tools", "git", "analysis", "project-management"]
+keywords = ["developer-tools", "git", "analysis", "project-management", "toolkit"]
 categories = ["development-tools", "command-line-utilities"]
 
 # Main dependencies for core functionality
@@ -26,4 +28,4 @@ walkdir = "2.5.0"                                    # Directory traversal
 serde = { version = "1.0.216", features = ["derive"] } # Serialization
 serde_json = "1.0.133"                               # JSON handling
 toml = "0.8.19"                                      # TOML file parsing
-regex = "1.10" # This dependency was missing in the provided code edit
+regex = "1.10" 
