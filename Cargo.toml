@@ -1,0 +1,29 @@
+# DevKit - A comprehensive developer toolkit
+# Created by: GlidedApex
+# Date: December 18, 2024
+# Made with ❤️ and Rust
+
+[package]
+name = "devkit"
+version = "0.1.0"
+edition = "2021"
+authors = ["GlidedApex"]
+description = "A comprehensive developer toolkit for project analysis and management"
+license = "MIT"
+repository = "https://github.com/GlidedApex/devkit"
+readme = "README.md"
+keywords = ["developer-tools", "git", "analysis", "project-management"]
+categories = ["development-tools", "command-line-utilities"]
+
+# Main dependencies for core functionality
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }  # Command line argument parsing
+tokio = { version = "1.42.0", features = ["full"] }   # Async runtime
+git2 = "0.18.3"                                       # Git repository interaction
+colored = "2.2.0"                                     # Terminal colors and styling
+indicatif = "0.17.9"                                 # Progress bars and spinners
+walkdir = "2.5.0"                                    # Directory traversal
+serde = { version = "1.0.216", features = ["derive"] } # Serialization
+serde_json = "1.0.133"                               # JSON handling
+toml = "0.8.19"                                      # TOML file parsing
+regex = "1.10" # This dependency was missing in the provided code edit
