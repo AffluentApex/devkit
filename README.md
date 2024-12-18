@@ -12,11 +12,95 @@ Created with ❤️ by GlidedApex | December 18, 2024
 - **Project Templates**: Quickly scaffold new projects with best practices
 - **Environment Check**: Verify your development environment setup
 
-## 🚀 Installation
+## 🚀 Installation Guide for Beginners
 
-```bash
-cargo install devkit
-```
+### Prerequisites
+
+1. **Install Rust**
+   ```bash
+   # Windows: Download and run rustup-init.exe from https://rustup.rs/
+   # After installation, open a new terminal and verify:
+   rustc --version    # Should show Rust version
+   cargo --version    # Should show Cargo version
+   ```
+
+2. **Install Git**
+   ```bash
+   # Windows: Download and install from https://git-scm.com/download/win
+   # After installation, open a new terminal and verify:
+   git --version     # Should show Git version
+   ```
+
+### Installing DevKit
+
+1. **Clone the Repository**
+   ```bash
+   # Open Terminal (Command Prompt or PowerShell on Windows)
+   cd C:\Users\YourUsername\Documents    # Or any folder where you want to download
+   git clone https://github.com/AffluentApex/devkit.git
+   cd devkit
+   ```
+
+2. **Build and Install**
+   ```bash
+   # This will compile and install DevKit
+   cargo install --path .
+   ```
+
+3. **Verify Installation**
+   ```bash
+   # Should show the DevKit welcome message
+   devkit --version
+   ```
+
+### Quick Start Guide
+
+1. **Check Your Development Environment**
+   ```bash
+   devkit check
+   # This will show if you have all required tools installed
+   ```
+
+2. **Analyze Your First Project**
+   ```bash
+   # Navigate to any project folder
+   cd C:\Users\YourUsername\YourProject
+   
+   # Check project complexity
+   devkit complexity .
+   
+   # If it's a git repository, analyze it
+   devkit git .
+   
+   # Check project dependencies
+   devkit dependencies .
+   ```
+
+### Troubleshooting
+
+1. **If 'devkit' is not recognized**
+   - Make sure you've added Cargo's bin directory to your PATH
+   - On Windows, restart your terminal after installation
+   - Try running `cargo install --path .` again
+
+2. **If you get permission errors**
+   - On Windows, run Command Prompt as Administrator
+   - Try running the commands with elevated privileges
+
+3. **Common Issues**
+   - "Git repository not found": Make sure you're in a git repository
+   - "Dependencies not found": Check if you're in a project root directory
+   - "Command not found": Make sure you've followed all installation steps
+
+### Need Help?
+
+If you encounter any issues:
+1. Check the error message carefully
+2. Make sure all prerequisites are installed
+3. Open an issue on GitHub with:
+   - The command you tried to run
+   - The exact error message
+   - Your operating system version
 
 ## 📖 Usage
 
